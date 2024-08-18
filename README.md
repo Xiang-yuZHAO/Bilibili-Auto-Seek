@@ -7,41 +7,39 @@
 - 可以自定义不同的电视剧跳转位置。
 
 ## 支持的网站
-- [哔哩哔哩](https://www.bilibili.com/bangumi/play/*)
+- [哔哩哔哩电视剧](https://www.bilibili.com/tv)
 
 ## 安装说明
 1. 安装油猴（Tampermonkey）浏览器扩展。
-2. 点击油猴扩展图标，选择“创建新脚本”。
-3. 将本仓库中的脚本代码复制并粘贴到新脚本中。
-4. 保存脚本，油猴会自动安装并启用该脚本。
+2. 点击油猴扩展图标，选择“创建新脚本”，将本仓库中的脚本代码复制并粘贴到新脚本中。或者更加推荐从 [Greasy Fork](https://greasyfork.org/zh-CN/scripts/504112-bilibili-auto-seek-%E8%87%AA%E5%AE%9A%E4%B9%89b%E7%AB%99%E7%94%B5%E8%A7%86%E5%89%A7%E8%B7%B3%E8%BF%87%E5%BC%80%E5%A4%B4) 直接安装脚本。
+3. 打开[哔哩哔哩电视剧](https://www.bilibili.com/tv)
+4. 油猴启用该脚本。
 
 ## 使用说明
 1. 打开哔哩哔哩网站并播放支持的视频。
 2. 当视频加载完成后，会弹出一个确认框，询问是否跳转到指定的时间位置。
 3. 选择“是”进行跳转，选择“否”则不进行跳转。
-4. 自定义跳转位置
-
-如果您希望为其他视频设置自定义的跳转位置，可以编辑脚本中的 `videoTitleToTimeMap` 对象。例如：
+4. 如果您希望为其他视频设置自定义的跳转位置，可以编辑脚本中的 `videoTitleToTimeMap` 对象。例如：
 
 ```javascript
 // 视频标题与跳转时间的映射表
 const videoTitleToTimeMap = {
     '铠甲勇士刑天': 3 * 60, // 3分钟
     '三国演义': 13 * 60, // 13分钟
-    '新视频标题': 5 * 60 // 5分钟
+    '新视频标题': 5 * 60 // 5分钟 （此处标题务必完全一致）
 };
 ```
 在这个示例中，您可以添加新的视频标题和对应的跳转时间（以秒为单位）。保存脚本后，新设置将生效。
 
 ## 如何贡献
 1. Fork 本仓库。
-2. 创建您的特性分支 (`git checkout -b feature/AmazingFeature`)。
-3. 提交您的更改 (`git commit -m 'Add some AmazingFeature'`)。
-4. 将更改推送到分支 (`git push origin feature/AmazingFeature`)。
+2. 创建您的特性分支。
+3. 提交您的更改。
+4. 将更改推送到分支。
 5. 创建一个新的 Pull Request。
 
 ## 许可证
 本项目采用 MIT 许可证，详情请参阅 [LICENSE](LICENSE) 文件。
 
 ## 联系
-如果您有任何问题或建议，请通过 [GitHub Issues](https://github.com/) 联系我。
+如果您有任何问题或建议，请通过 [GitHub Issues](https://github.com/Xiang-yuZHAO/Bilibili-Auto-Seek) 联系我。
